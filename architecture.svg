@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470" width="680" height="470" role="img"
+     aria-label="Signal path and stack-up of the SFP+ 10G BERT pocket carrier">
+  <rect x="0" y="0" width="680" height="470" fill="#F6F6F3"/>
+
+  <text x="24" y="40" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif"
+        font-size="19" font-weight="600" letter-spacing="-0.4" fill="#111214">SFP+ 10G BERT pocket</text>
+  <text x="24" y="60" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif"
+        font-size="12" fill="#575A61">Signal path, host interface and 4-layer stack-up. 10.3125 Gbit/s, 64 bit per 161.1328125 MHz clock.</text>
+
+  <!-- ============ forward path ============ -->
+  <text x="24" y="96" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif"
+        font-size="11" fill="#575A61">Forward path, module to FPGA</text>
+
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">
+    <rect x="24" y="106" width="118" height="58" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="83" y="130" font-size="12.5" fill="#111214" text-anchor="middle">SFP+ module</text>
+    <text x="83" y="147" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#575A61" text-anchor="middle">TD+/- &#183; RD+/-</text>
+
+    <rect x="176" y="106" width="92" height="58" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="222" y="130" font-size="12.5" fill="#111214" text-anchor="middle">AC coupling</text>
+    <text x="222" y="147" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#575A61" text-anchor="middle">100 nF 0201</text>
+
+    <rect x="302" y="106" width="104" height="58" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="354" y="130" font-size="12.5" fill="#111214" text-anchor="middle">100 &#937; pair</text>
+    <text x="354" y="147" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#575A61" text-anchor="middle">0.15 / 0.15 mm</text>
+
+    <rect x="440" y="106" width="84" height="58" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="482" y="130" font-size="12.5" fill="#111214" text-anchor="middle">J3 2x5</text>
+    <text x="482" y="147" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#575A61" text-anchor="middle">2.54 mm</text>
+
+    <rect x="558" y="106" width="98" height="58" fill="#FFFFFF" stroke="#D94E1F" stroke-width="1.5"/>
+    <text x="607" y="130" font-size="12.5" fill="#111214" text-anchor="middle">PRBS-31</text>
+    <text x="607" y="147" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#8A2F10" text-anchor="middle">64 bit / clk</text>
+  </g>
+
+  <g stroke="#111214" stroke-width="1.2" fill="none">
+    <path d="M142 135 H172"/><path d="M268 135 H298"/><path d="M406 135 H436"/><path d="M524 135 H554"/>
+  </g>
+  <g fill="#111214">
+    <path d="M176 135 l-6 -3 v6 z"/><path d="M302 135 l-6 -3 v6 z"/><path d="M440 135 l-6 -3 v6 z"/><path d="M558 135 l-6 -3 v6 z"/>
+  </g>
+
+  <!-- ============ checker ============ -->
+  <text x="24" y="200" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif"
+        font-size="11" fill="#575A61">Receive checker and counters</text>
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">
+    <rect x="24" y="210" width="128" height="52" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="88" y="232" font-size="12" fill="#111214" text-anchor="middle">self-sync check</text>
+    <text x="88" y="248" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10" fill="#575A61" text-anchor="middle">s[n-28] ^ s[n-31]</text>
+
+    <rect x="184" y="210" width="128" height="52" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="248" y="232" font-size="12" fill="#111214" text-anchor="middle">ber_counter</text>
+    <text x="248" y="248" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10" fill="#575A61" text-anchor="middle">64 bit, saturating</text>
+
+    <rect x="344" y="210" width="128" height="52" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="408" y="232" font-size="12" fill="#111214" text-anchor="middle">SFF-8472 A2h</text>
+    <text x="408" y="248" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10" fill="#575A61" text-anchor="middle">0x60..0x69</text>
+
+    <rect x="504" y="210" width="152" height="52" fill="#FFFFFF" stroke="#CFCFC7" stroke-width="1"/>
+    <text x="580" y="232" font-size="12" fill="#111214" text-anchor="middle">CP2102N &#8594; USB</text>
+    <text x="580" y="248" font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10" fill="#575A61" text-anchor="middle">bert_cli.py</text>
+  </g>
+  <g stroke="#111214" stroke-width="1.2" fill="none">
+    <path d="M152 236 H180"/><path d="M312 236 H340"/><path d="M472 236 H500"/>
+  </g>
+  <g fill="#111214">
+    <path d="M184 236 l-6 -3 v6 z"/><path d="M344 236 l-6 -3 v6 z"/><path d="M504 236 l-6 -3 v6 z"/>
+  </g>
+
+  <!-- ============ stack-up ============ -->
+  <text x="24" y="300" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif"
+        font-size="11" fill="#575A61">4-layer stack-up (1.6 mm finished)</text>
+
+  <g font-family="'SF Mono', 'JetBrains Mono', Consolas, monospace" font-size="10">
+    <rect x="24" y="310" width="300" height="15" fill="#D94E1F" opacity="0.85"/>
+    <text x="332" y="322" fill="#111214">F.Cu  35 &#181;m   signal, 100 &#937; pairs</text>
+
+    <rect x="24" y="325" width="300" height="17" fill="#FFFFFF" stroke="#E2E2DC" stroke-width="1"/>
+    <text x="332" y="338" fill="#575A61">FR4   100 &#181;m   prepreg, &#949;r 4.2</text>
+
+    <rect x="24" y="342" width="300" height="15" fill="#111214"/>
+    <text x="332" y="354" fill="#111214">In1.Cu 35 &#181;m   solid GND reference</text>
+
+    <rect x="24" y="357" width="300" height="17" fill="#FFFFFF" stroke="#E2E2DC" stroke-width="1"/>
+    <text x="332" y="370" fill="#575A61">FR4   450 &#181;m   core</text>
+
+    <rect x="24" y="374" width="300" height="15" fill="#575A61"/>
+    <text x="332" y="386" fill="#111214">In2.Cu 35 &#181;m   3V3 plane</text>
+
+    <rect x="24" y="389" width="300" height="17" fill="#FFFFFF" stroke="#E2E2DC" stroke-width="1"/>
+    <text x="332" y="402" fill="#575A61">FR4   100 &#181;m   prepreg</text>
+
+    <rect x="24" y="406" width="300" height="15" fill="#D94E1F" opacity="0.85"/>
+    <text x="332" y="418" fill="#111214">B.Cu  35 &#181;m   RD pair, stitched</text>
+  </g>
+
+  <!-- ============ notes ============ -->
+  <text x="24" y="448" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif"
+        font-size="10.5" fill="#575A61">Every number here is checked by tests/: the 95 generator rows against a serial LFSR, the DDM decode against hand values,</text>
+  <text x="24" y="462" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif"
+        font-size="10.5" fill="#575A61">the board against kicad-dfm-precheck, and both testbenches under iverilog.</text>
+</svg>

@@ -1,0 +1,14 @@
+# simulator output
+*.vvp
+*.vcd
+tb.vcd
+
+# python
+__pycache__/
+*.pyc
+
+# kicad local junk
+*.kicad_prl
+*.kicad_pro
+fp-info-cache
+*-backups/
