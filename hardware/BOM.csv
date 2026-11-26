@@ -1,0 +1,27 @@
+﻿Ref,Qty,Value,Package,Manufacturer,MPN,LCSC,Alternate MPN,Notes
+J1,1,SFP+ cage 20P,SFP+ cage,TE Connectivity,2007198-1,tbd,1932258-1,shielded cage with heatsink clip
+J2,1,USB-C receptacle 16P,SMD 9.0 mm,HRO,TYPE-C-31-M-12,C165948,UJ20-C-V-023,power + USB 2.0 only
+J3,1,Header 2x5 2.54 mm,THT,generic,Conn_02x05_P2.54,tbd,613010,TD/RD/REFCLK/3V3/GND/SDA/SCL breakout
+U1,1,TPS7A9401,VSON-8 3x3,Texas Instruments,TPS7A9401DGN,tbd,TPS7A9418PDBVR,4.4 uVrms low-noise LDO for the module rail
+U2,1,161.1328125 MHz LVDS,3225 6-pin,Skyworks,545ACA161M132BAG,tbd,SiT9120AI-2C2-33E161.132812,10GBASE-R reference clock, 50 ppm
+U3,1,CP2102N QFN-24,QFN-24 4x4,Silicon Labs,CP2102N-A02-GQFN24,tbd,CP2102N-A02-GQFN28,USB to I2C/UART bridge for DDM polling
+D1,1,USBLC6-2SC6,SOT-23-6,STMicroelectronics,USBLC6-2SC6,tbd,USBLC6-4SC6,ESD array on D+/D-
+C1,1,100nF 16V X7R,0201,Murata,GRM033R71C104KA01D,tbd,CL03B104KO3NNNC,TD+ AC coupling
+C2,1,100nF 16V X7R,0201,Murata,GRM033R71C104KA01D,tbd,CL03B104KO3NNNC,TD- AC coupling
+C3,1,100nF 16V X7R,0201,Murata,GRM033R71C104KA01D,tbd,CL03B104KO3NNNC,RD+ AC coupling
+C4,1,100nF 16V X7R,0201,Murata,GRM033R71C104KA01D,tbd,CL03B104KO3NNNC,RD- AC coupling
+C5,1,10uF 16V X5R,0603,Samsung,CL10A106KO8NNNC,C15850,GRM188R61C106KAALD,bulk on the 3V3 rail
+C6,1,1uF 16V X7R,0402,Samsung,CL05B105KO5NNNC,tbd,GRM155R71C105KA12D,LDO input bypass
+C7,1,4.7uF 10V X5R,0603,Samsung,CL10A475KP8NNNC,tbd,GRM188R61A475KE15D,module rail bulk
+C8,1,100nF 50V X7R,0402,Samsung,CL05B104KO5NNNC,C1525,GRM155R71H104KE14D,module rail high frequency
+R1,1,4.7k 1%,0402,Yageo,RC0402FR-074K7L,tbd,CRCW04024K70FKED,SDA pull-up to 3V3
+R2,1,4.7k 1%,0402,Yageo,RC0402FR-074K7L,tbd,CRCW04024K70FKED,SCL pull-up to 3V3
+R3,1,10k 1%,0402,Yageo,RC0402FR-0710KL,tbd,CRCW040210K0FKED,TX_DISABLE pull-up
+TP1,1,Test point 1.5 mm,THT,Keystone,5000,tbd,5001,TD after AC coupling
+TP2,1,Test point 1.5 mm,THT,Keystone,5000,tbd,5001,RD after AC coupling
+TP3,1,Test point 1.5 mm,THT,Keystone,5000,tbd,5001,SDA
+TP4,1,Test point 1.5 mm,THT,Keystone,5000,tbd,5001,SCL
+H1,1,Mounting hole 2.7 mm,THT,generic,MountingHole_2.7mm,tbd,none,M2.5 screw, grounded pad
+H2,1,Mounting hole 2.7 mm,THT,generic,MountingHole_2.7mm,tbd,none,M2.5 screw, grounded pad
+H3,1,Mounting hole 2.7 mm,THT,generic,MountingHole_2.7mm,tbd,none,M2.5 screw, grounded pad
+H4,1,Mounting hole 2.7 mm,THT,generic,MountingHole_2.7mm,tbd,none,M2.5 screw, grounded pad
